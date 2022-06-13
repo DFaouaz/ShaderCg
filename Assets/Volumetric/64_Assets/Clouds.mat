@@ -27,9 +27,9 @@ Material:
     - _FadeDist: 0.5
     - _InnerRatio: 0.5
     - _MaxHeight: 10
-    - _MinHeight: 0
-    - _Scale: 0.25
-    - _StepScale: 0.1
+    - _MinHeight: 0.22
+    - _Scale: 9.63
+    - _StepScale: 2.6
     - _Steps: 200
     m_Colors:
     - _FogColor: {r: 1, g: 1, b: 1, a: 1}

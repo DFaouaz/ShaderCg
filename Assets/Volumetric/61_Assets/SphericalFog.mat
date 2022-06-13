@@ -27,4 +27,5 @@ Material:
     - _InnerRatio: 0.5
     m_Colors:
     - _FogColor: {r: 1, g: 1, b: 1, a: 1}
-    - _FogParams: {r: 0, g: 0, b: 0, a: 0.5}
+    - _FogParams: {r: 150, g: 0.5, b: 0, a: 0.5}
+    - _Position: {r: 0, g: 0, b: 0, a: 0}

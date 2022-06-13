@@ -1,5 +1,9 @@
 ﻿Shader "CourseShaders/MoreRayMarchingSphere"
 {
+	Properties
+	{
+		_Position("Position", Vector) = (0,0,0,0)
+	}
 	SubShader
 	{
 		Tags { "Queue"="Transparent" }
@@ -25,6 +29,7 @@
 				float4 pos : SV_POSITION;
 			};
 
+			float4 _Position;
 			
 			v2f vert (appdata v)
 			{
@@ -48,7 +53,7 @@
 			{
 				for (int i = 0; i < STEPS; i++) 
 				{
-					if (SphereHit(position, SPHERE_POS, 0.5))
+					if (SphereHit(position, _Position + SPHERE_POS, 0.5))
 						return position;
 
 					position += direction * STEP_SIZE;

@@ -22,6 +22,10 @@ public class CameraClouds : MonoBehaviour
         {
             if (_camera == null)
                 _camera = GetComponent<Camera>();
+            if (_camera == null)
+                _camera = FindObjectOfType<Camera>();
+            if (_camera == null)
+                _camera = Camera.main;
             return _camera;
         }
     }
@@ -139,5 +143,10 @@ public class CameraClouds : MonoBehaviour
         {
             DestroyImmediate(_material);
         }
+    }
+
+    public void SetShader(Shader shader)
+    {
+        CloudsShader = shader;
     }
 }
