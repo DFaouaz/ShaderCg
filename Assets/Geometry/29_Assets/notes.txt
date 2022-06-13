@@ -1,0 +1,7 @@
+Non Physically Based Lighting
+- Lambert: simple lighting, does not take into account specular reflections
+- Blinn-Phong: introduces specular lighting
+
+Phisically Based Lighting (used for photo-realistic environments)
+- Built-In Standard
+- Built-In StandardSpecular
